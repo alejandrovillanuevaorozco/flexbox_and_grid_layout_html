@@ -7,6 +7,7 @@
 .layout{
     display: block;
     justify-content: center;
+    background-color: #000;
 }
 .cabecera {
     background-color:black;
@@ -277,13 +278,14 @@ h1{
 }
 
 .footer_abajo{
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     color: red;
     padding: 20px;
     font-family: sans-serif;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;    
+    border-top: rgba(255, 0, 0, 0.213) solid 1px;
 }
 .foto_grupal{
     display: flex;
@@ -300,4 +302,55 @@ h1{
     justify-content: center;
     object-fit: cover;
 }
+
+.container_pilotos{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #000;
+    margin:1% 1% 0 1%;
     
+}
+
+.text_pilotos{
+    text-align: start;
+    padding: 10px 10px 0 10px;
+    border: 10px;
+    border-color: red;
+}
+
+.container_imagenes_pilotos{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-left: 1%;
+    margin-left: 1%;
+}
+.tarjeta_imagenes{
+    background-image: url('img/pilotos/fondo_pilotos.avif');
+    width: 180px;
+    height: 332px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    align-items:center;
+    justify-content: center;
+    margin: 10px;
+}
+.foto_piloto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.text_tarjeta_piloto{
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    z-index: 1;
+}
