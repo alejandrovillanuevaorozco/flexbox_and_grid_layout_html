@@ -7,16 +7,17 @@
 .layout{
     display: block;
     justify-content: center;
+    min-height: 100vh;
     background-color: #000;
 }
 .cabecera {
     background-color:black;
     width: 100%;
-    min-height: 60px;
+    min-height: 70px;
     display: flex;
     align-items: center;
     padding: 0 20px;
-    position: sticky;
+    position: sticky; /*pa' que se mantenga en la pagina */
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -27,21 +28,49 @@
     align-items: center;
     padding-right: 20px;
     border-right: 3px solid white;
+    flex-shrink: 0; /*pa' que no se encoja */
 }
 
 .foto_logo {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
 }
 .logo_t{
-    width: 40px;
+    width: 150px;
     height: 40px;
     object-fit: cover;
     justify-content: flex-end;
-    background-color: white;
     border-radius: 10px;
-    margin-left: 550px;
+    margin-left: 350px;
+    flex-grow: 0;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    flex: 1; /* pa' ocupar espacio disponible */
+    flex-wrap: wrap; /* responsive en móviles */
+
+}
+
+.menu a,
+.menu a:visited {
+    color: white;
+    text-decoration: none;
+    padding: 18px 20px;
+    border-right: 3px solid white;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    transition: all 0.3s ease;
+    white-space: nowrap; /*no rompe palabras */
+}
+
+.menu a:hover {
+    background-color: #a00020;
+    border-color: #fff;
+    border-left: 3px solid white;
+    transform: scale(1.05); /*efecto hover */
 }
 .carrusel{
     display: flex;
@@ -148,27 +177,6 @@
     height: auto;
     display: block;
 }
-
-.menu {
-    display: flex;
-    align-items: center;
-}
-
-.menu a,
-.menu a:visited {
-    color: white;
-    text-decoration: none;
-    padding: 18px 20px;
-    border-right: 3px solid white;
-    display: flex;
-    align-items: center;
-    height: 40px;
-}
-
-.menu a:hover {
-    background-color: #a00020;
-}
-
 h1{
     border: 20px white;
     text-align: center;
