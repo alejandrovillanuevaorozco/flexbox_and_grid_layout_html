@@ -37,6 +37,7 @@
     object-fit: cover;
 }
 .logo_t{
+    display: flex;
     width: 150px;
     height: 40px;
     object-fit: cover;
@@ -63,7 +64,7 @@
     align-items: center;
     height: 40px;
     transition: all 0.3s ease;
-    white-space: nowrap; /*no rompe palabras */
+    white-space: nowrap; /* no rompe palabras */
 }
 
 .menu a:hover {
@@ -145,7 +146,7 @@
 
 .seccion2{
     display: flex;
-    background-image: url('farola.jpg');
+    background-image: url('img/farola.jpg');
     object-fit: cover;
     color: white;
     justify-content: flex-start;
@@ -185,101 +186,6 @@ h1{
     font-size: 40px;
 }
 
-.main_principal{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('fondo.avif');
-    display: block;
-    justify-content: center;
-    align-items:center;
-    object-fit: cover;    
-}
-.contenedor-tarjetas{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    padding: 10px;
-    margin: 10px;
-}
-.tarjeta {
-    background-color: #ccbeb1;
-    width: 350px;
-    height: 620px;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
-    align-items:center;
-    justify-content: center;
-    margin: 10px;
-}
-.tarjeta:hover {
-    transform: translateY(-10px);
-}
-.media-hover{
-    position: relative;
-    width: 100%;
-    max-width: 320px;
-    height: 200px;
-    margin: 0 auto 15px;
-    overflow: hidden;
-    border-radius: 10px;
-}
-.foto-perfil{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-.video-container{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.video-container iframe{
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-.titulo_tarjeta{
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-.subtitulo {
-    color: #666;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-}
-.habilidades {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    margin-top: 1.5rem;
-}
-.tag {
-    background-color: #e7f3ff;
-    color: black;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-}
-.btn-contacto {
-    background-color: #997e67;
-    color: white;
-    border: none;
-    padding: 10px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    margin-top: 10px;
-
-}
 .tarjeta-pie{
     padding: 10px;
     margin-top: 10px;
@@ -321,6 +227,7 @@ h1{
 }
 
 .text_pilotos{
+    display: flex;
     text-align: start;
     padding: 10px 10px 0 10px;
     border: 10px;
@@ -335,6 +242,7 @@ h1{
     margin-left: 1%;
 }
 .tarjeta_imagenes{
+    display: flex;
     background-image: url('img/pilotos/fondo_pilotos.avif');
     width: 180px;
     height: 332px;
